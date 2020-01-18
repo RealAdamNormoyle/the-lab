@@ -24,6 +24,8 @@ public class SimulationMain : MonoBehaviour
             obj.transform.SetParent(neuronContainer.transform);
         }
 
+
+
     }
 
     // Update is called once per frame
@@ -32,7 +34,8 @@ public class SimulationMain : MonoBehaviour
 
 
         if (ticks < 10000) {
-        //Debug.Log(neuralNet.totalNeurons);
+
+            //Debug.Log(neuralNet.totalNeurons);
             if(!DynamicNeuralNet.DynamicNeuralNet.StimulateRandomNeuron())
                 Debug.Log("No active Neurons");
 
